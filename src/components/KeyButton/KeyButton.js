@@ -6,7 +6,7 @@ function KeyButton({ children }) {
       {children.map((letter) => (
         <span className={`key `}
           key={letter.letter}
-          if 
+          
         >
           {letter.letter}
         </span>
