@@ -20,12 +20,6 @@ If you're not sure how to run a local development server, or if you run into som
 >
 > This workshop is split into 5 exercises, and each exercise has a solution video. If you spend more than 10 minutes stuck on an exercise, I encourage you to **watch the solution.** If things are still unclear after that, please ask questions in the Discord community!
 
-## Troubleshooting
-
-If you run into any weird errors when trying to run a development server, start by deleting the `.parcel-cache` directory. This directory holds temporary automatically-generated files, and sometimes things get out of sync, and they need to be deleted.
-
-If you're still experiencing issues after deleting `.parcel-cache`, you can share the error message and any additional details in Discord.
-
 ## Exercise 1: GuessInput
 
 First thing’s first: we need a way to submit guesses!
@@ -56,7 +50,7 @@ Here's a quick screen recording of the expected result:
 **Acceptance Criteria:**
 
 - Create a new component.
-  - Don't forget, you can use an NPM script to generate the scaffolding for you! We learn how to do this in the [“Getting Started” video](https://courses.joshwcomeau.com/joy-of-react/project-wordle/04-overview)
+  - (Don't forget, you can use an NPM script to generate the scaffolding for you!)
 - This component should render a `<form>` tag, including a label and a text input.
 - The text input should be controlled by React state.
 - When the form is submitted:
