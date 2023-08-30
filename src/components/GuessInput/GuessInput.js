@@ -1,6 +1,6 @@
 import React from "react";
 
-function GuessInput({ guesses, setGuesses, gameOver }) {
+function GuessInput({ guesses, setGuesses, gameOver, limit, answer, setGameOver }) {
   const [guess, setGuess] = React.useState("");
   return (
     <form
@@ -9,6 +9,9 @@ function GuessInput({ guesses, setGuesses, gameOver }) {
         event.preventDefault();
         const nextGuesses = [...guesses, guess];
         setGuesses(nextGuesses);
+        if (guesses.length === limit || guess === answer) {
+          setGameOver(true);
+        }
         setGuess("");
       }}
     >

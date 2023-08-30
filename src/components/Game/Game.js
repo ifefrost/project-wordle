@@ -24,15 +24,17 @@ function Game() {
         guesses={guesses}
         setGuesses={setGuesses}
         gameOver={gameOver}
+        limit={limit}
+        answer={answer}
+        setGameOver={setGameOver}
       />
       {/* <KeyBoard guesses={guesses} setGuesses={setGuesses} answer={answer} /> */}
       
-      <GameOver
+      {setGameOver && <GameOver
         guesses={guesses}
         answer={answer}
         limit={limit}
-        setGameOver={setGameOver}
-      />
+      />}
     </>
   );
 }

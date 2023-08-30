@@ -1,12 +1,6 @@
 import React from "react";
 
-function GameOver({ guesses, answer, limit, setGameOver }) {
-  React.useEffect(() => {
-    if (guesses.length === limit || guesses[guesses.length - 1] === answer) {
-      setGameOver(true);
-    }
-  }, [guesses, answer, limit, setGameOver]);
-  
+function GameOver({ guesses, answer, limit }) {
   if (guesses[guesses.length - 1] === answer) {
     return (
       <div className='happy banner'>
